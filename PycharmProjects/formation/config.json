@@ -1,0 +1,24 @@
+{
+    "database": {
+        "host": "localhost",
+        "port": 3366,
+        "user": "luc",
+        "password": "parapluie",
+        "database": "formation"
+    },
+    "author": null,
+    "prod": false,
+    "logging": {
+        "level": "WARNING",
+        "output": [
+            {
+                "type": "standard",
+                "target": "stderr"
+            },
+            {
+                "type": "file",
+                "target": "formation.log"
+            }
+        ]
+    }
+}

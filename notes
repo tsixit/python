@@ -1,0 +1,116 @@
+wiki du cours:
+
+http://192.168.75.56/wiki
+
+Enregistrer toujours les programmes en utf-8
+
+pycharm: ide python
+https://www.jetbrains.com/
+sudo apt search pycharm
+sudo add-apt-repository ppa:viktor-krivak/pycharm
+sudo apt update
+sudo apt install pycharm
+
+Environnement virtuel:
+un repertoire qui va contenir les librairies qu'on utilise, assui que les interpreteurs, au lieu de l'installe diecement dans le systeme. On en crée un par pojet
+
+En python, toute les fonctions sont des objets
+
+En python2, il faut pas se servir de la foncion input(), car il interprète directement ce qui a été saisie il faut utiliser raw_input()
+
+Existe la librairie six (2to3) pour faire  du python2 to python3, permet la compatibilité entre python2 et 3
+
+##installation du gestionaire de package python
+sudo apt install python-pip
+#installation de la librairie six
+pip install six
+
+pprint : module permet d'afficher une liste proprement
+
+python interacive 
+http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/index.html#
+
+L'importation d'un module ou d'un package a créé un fichier __pycache__, version compilé des modules et des packages, pou^être plus rapide lors de l'exécution
+
+
+le module sys contient une variable path qui contient la liste des paths dont lequel python va chercher tous les modules et package
+
+setuptools pour créer monpackage.tar.gz ou monpackage.zip
+pui faire pip install monpackage.tar.gz pour l'installer
+
+request : un package permettant de faire une requette http 
+beautifulsoup: récupérer les contenus d'un site http
+
+argparse : module  permet de gérer les aguments données à un script python 
+
+paramiko: module pour exécuter des commandes à distance (utiliser par ansible)
+
+sqlalchemy : module pour gérer les bases de données
+sphinx : module permettant de faire une documentation à partir des chaine délimité par """ ( docstring) dans un programme python ou personnel
+
+http://sametmax.com/tres-grand-listing-des-libs-tierce-partie-les-plus-utiles-en-python/
+
+pip: gestionnaire de paquet sur python2
+pip3 : gestionnaire de paquet sur python3
+
+Pour créer un  obket, on crée d'abord la classe
+appel d'un objet: exobjet(), c'est comme une fonction
+un objet a besoin d'un constructeur, une fonction dont le nom est : __init__(self) pour pouvoir travailler sur les attribut passer en paramètre los de l'appel de l'objet
+
+dans la console intéractive, on peut importer le module et faire un help avec une des methodes par exemple, ça retourne les documentations
+
+Pour protéger une variable, attribut , on ajoute un "_" au début su son nom. ON peut plus les utiliser en déhors de la classe
+
+Atrribut, variable et méthode privé : double "__": me les classe fils ne les voient plus
+
+try , except 
+try : capturer les execptions 
+except : traite les excéptions
+si les exceptions sont traité alors, il ne stope pas le programme
+
+socket: module permettant de faire la communication réseau
+
+Packages standards
+
+    re (expressions régulières)
+    datetime (dates et heures)
+    pprint (affichage de structures de données)
+    math (fonctions mathétiques)
+    decimal (nombres décimaux)
+    random (aléatoire)
+    os.path (chemin disque dur)
+    tempfile (fichiers et répertoires temporaires)
+    shutil (fonctions shells)
+    sqlite3 (gestion des bases de données SQLite3)
+    zipfile (gestion des fichiers zip)
+    logging (écrire des logs)
+    threading (fils d'exécution concurrents, voir GIL)
+    multiprocessing (processus parallèles)
+    json (sérialisation JSON)
+    tkinter (interface graphique avec Tk)
+    pdb (debugger Python)
+    unittest (tests unitaires)
+
+Librairies tierces
+
+    mysql-python (Bases MySQL)
+    Psycopg2 (Bases PostgreSQL)
+    SQLAlchemy (ORM)
+    PyQt5 (Interfaces graphiques avec Qt5)
+    PyTest (tests unitaires)
+    Sphinx (générer la documentation à partir des docstrings)
+    py2exe (créer un .exe à partir d'un programme Python)
+    PyInstaller (créer un exécutable (.exe) à partir d'un programme Python)
+    matplotlib (tracer des graphiques)
+    Django (framework web)
+    Micro-frameworks : Bottle, CherryPy, Flask
+    youtube-dl (télécharger des vidéos du net)
+    requests (requêtes http)
+    BeautifulSoup (parseur HTML)
+
+Les interfaces graphiques
+Frameworks graphiques 	Package Python
+Qt5 						PyQt5
+Tk 							tkinter
+wxWidgets 					wxPython
+GTK 						PyGTK 
